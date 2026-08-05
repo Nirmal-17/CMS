@@ -1,14 +1,11 @@
-const app = require("express")();
-const mongoose = require("mongoose");
+const { connectDatabase } = require("./database/database");
 
-//connecting database
-mongoose.connect("mongodb://nirmaldahal19_db_user:nirmal7@ac-vuufxqb-shard-00-00.3we19lg.mongodb.net:27017,ac-vuufxqb-shard-00-01.3we19lg.mongodb.net:27017,ac-vuufxqb-shard-00-02.3we19lg.mongodb.net:27017/?ssl=true&replicaSet=atlas-dpq844-shard-0&authSource=admin&appName=Cluster0&retryWrites=true&w=majority")
-.then(()=>{
-    console.log("Database connected successfully")
-})
-.catch((err)=>{
-    console.log("Database connection failed",err)
-})
+const app = require("express")();
+
+
+//DATABASE CONNECTION
+connectDatabase()
+
 
 //GET API
 app.get('/',(req,res)=>{
