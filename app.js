@@ -1,4 +1,4 @@
-const { connectDatabase } = require("./database/database");
+const { connectDatabase } = require("./database/database.js");
 
 const app = require("express")();
 
