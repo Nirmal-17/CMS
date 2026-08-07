@@ -12,7 +12,7 @@ app.get('/',(req,res)=>{
     res.send("You are in the home page")})
     app.get('/about',(req,res)=>{
         res.json({
-            message:"This is the about page",
+            message:"about page",
             status:8888
         })
     })
@@ -25,5 +25,5 @@ app.get('/',(req,res)=>{
 
 
 
-app.listen(3000,(req,res)=>{
-    console.log('server is running on port 3000')}) 
+app.listen(4444,(req,res)=>{
+    console.log('server is running on port 4444')}) 
