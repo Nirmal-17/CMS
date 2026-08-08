@@ -7,6 +7,7 @@ exports.connectDatabase = async () => {
         );
 
         console.log("✅ Database connected successfully!");
+    
     } catch (error) {
         console.log("❌ Database connection failed!");
         console.error(error);
