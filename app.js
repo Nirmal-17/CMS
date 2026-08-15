@@ -4,7 +4,7 @@ const express = require("express");
 const app = express();
 
 app.use(express.json());
-app.use(express.urlencoded({extended:true}))
+app.use(express.urlencoded({extended:true}));
 //DATABASE CONNECTION
 connectDatabase()
 
@@ -21,10 +21,12 @@ app.get('/',(req,res)=>{
     app.get('/contact',(req,res)=>{
         res.send("contact information!")
     })
+    app.get('/index',(req,res)=>{
+        res.send("you are in index page!")
+    })
     //Create a blog api
     app.post('/blog',async(req,res)=>{
         const {title,subTitle,description}=req.body;
-
 //insert into database logic
 await Blog.create({
    title: title,
@@ -39,8 +41,8 @@ await Blog.create({
         res.json({
          message:"blog created successfully",
            status:200
-        })
-    })
+        });
+    });
 
 
 
