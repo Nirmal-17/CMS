@@ -6,13 +6,16 @@ const blogSchema = new Schema({
         type: String,
         required: true
     },
-    subTitile:{
-        type:String,
+    subTitle:{
+        type:String
     },
     description:{
-        type:String},
+        type:String
+    },
     },{
         timestamps:true
     })
     const Blog= mongoose.model("Blog",blogSchema)
+    //Alternative
+    //module.exports = mongoose.model("Blog",blogSchema)
     module.exports=Blog

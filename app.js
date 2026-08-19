@@ -26,7 +26,11 @@ app.get('/',(req,res)=>{
     })
     //Create a blog api
     app.post('/blog',async(req,res)=>{
-        const {title,subTitle,description}=req.body;
+        const title=req.body.title;
+        const subTitle=req.body.subTitle
+        const description=req.body.description;
+
+
 //insert into database logic
 await Blog.create({
    title: title,
