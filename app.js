@@ -18,6 +18,42 @@ app.get('/',(req,res)=>{
             status:8888
         })
     })
+    app.get('/blogs',async(req,res)=>{
+        const blogs=await Blog.find();
+//check if blogs contains data or not
+if(blogs.length==0){
+    res.json({
+        status:200,
+        message:"empty blogs",
+        
+    })}
+else{
+            res.status(200).json({
+            message:"Blogs fetched successfully",
+            data:blogs
+        })
+    }
+    })
+//GET API -> /blogs/:id (single blog)
+app.get('/blogs/:id',async(req,res)=>{
+    //const {id} = req.params
+    //const blog = await Blog.find({_id:id})
+    const blog=await Blog.findById(id=req.params.id)
+    if(blog){
+        res.json({
+            message:"single blog fetched successfully",
+            data:blog
+        })
+    }else
+    {
+    res.status(404).json({
+        message:"Blog not found",
+        data:null
+    })
+
+}})
+
+
     app.get('/contact',(req,res)=>{
         res.send("contact information!")
     })
@@ -25,7 +61,7 @@ app.get('/',(req,res)=>{
         res.send("you are in index page!")
     })
     //Create a blog api
-    app.post('/blog',async(req,res)=>{
+    app.post('/createBlog',async(req,res)=>{
         const title=req.body.title;
         const subTitle=req.body.subTitle
         const description=req.body.description;
@@ -37,10 +73,6 @@ await Blog.create({
     subTitle: subTitle,
     description: description
 })
-
-
-
-
 
         res.json({
          message:"blog created successfully",
