@@ -1,0 +1,16 @@
+C:\Users\user\OneDrive\Desktop\CMS\src\Cms.Application\obj\Debug\net8.0\Cms.Application.csproj.AssemblyReference.cache
+C:\Users\user\OneDrive\Desktop\CMS\src\Cms.Application\obj\Debug\net8.0\Cms.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\OneDrive\Desktop\CMS\src\Cms.Application\obj\Debug\net8.0\Cms.Application.AssemblyInfoInputs.cache
+C:\Users\user\OneDrive\Desktop\CMS\src\Cms.Application\obj\Debug\net8.0\Cms.Application.AssemblyInfo.cs
+C:\Users\user\OneDrive\Desktop\CMS\src\Cms.Application\obj\Debug\net8.0\Cms.Application.csproj.CoreCompileInputs.cache
+C:\Users\user\OneDrive\Desktop\CMS\src\Cms.Application\obj\Debug\net8.0\Cms.Application.sourcelink.json
+C:\Users\user\OneDrive\Desktop\CMS\src\Cms.Application\bin\Debug\net8.0\Cms.Application.deps.json
+C:\Users\user\OneDrive\Desktop\CMS\src\Cms.Application\bin\Debug\net8.0\Cms.Application.dll
+C:\Users\user\OneDrive\Desktop\CMS\src\Cms.Application\bin\Debug\net8.0\Cms.Application.pdb
+C:\Users\user\OneDrive\Desktop\CMS\src\Cms.Application\bin\Debug\net8.0\Cms.Domain.dll
+C:\Users\user\OneDrive\Desktop\CMS\src\Cms.Application\bin\Debug\net8.0\Cms.Domain.pdb
+C:\Users\user\OneDrive\Desktop\CMS\src\Cms.Application\obj\Debug\net8.0\Cms.Appl.F5E529BD.Up2Date
+C:\Users\user\OneDrive\Desktop\CMS\src\Cms.Application\obj\Debug\net8.0\Cms.Application.dll
+C:\Users\user\OneDrive\Desktop\CMS\src\Cms.Application\obj\Debug\net8.0\refint\Cms.Application.dll
+C:\Users\user\OneDrive\Desktop\CMS\src\Cms.Application\obj\Debug\net8.0\Cms.Application.pdb
+C:\Users\user\OneDrive\Desktop\CMS\src\Cms.Application\obj\Debug\net8.0\ref\Cms.Application.dll

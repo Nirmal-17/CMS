@@ -1,0 +1,132 @@
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      PRAGMA journal_mode = 'wal';
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE "BlogPosts" (
+          "Id" INTEGER NOT NULL CONSTRAINT "PK_BlogPosts" PRIMARY KEY AUTOINCREMENT,
+          "Title" TEXT NOT NULL,
+          "Summary" TEXT NOT NULL,
+          "Content" TEXT NOT NULL,
+          "AuthorName" TEXT NOT NULL,
+          "CreatedAt" TEXT NOT NULL,
+          "UpdatedAt" TEXT NOT NULL
+      );
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX "IX_BlogPosts_CreatedAt" ON "BlogPosts" ("CreatedAt");
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT EXISTS (
+          SELECT 1
+          FROM "BlogPosts" AS "b")
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (4ms) [Parameters=[@p0='?' (Size = 8), @p1='?' (Size = 111), @p2='?' (DbType = DateTime), @p3='?' (Size = 44), @p4='?' (Size = 18), @p5='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "BlogPosts" ("AuthorName", "Content", "CreatedAt", "Summary", "Title", "UpdatedAt")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5)
+      RETURNING "Id";
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 8), @p1='?' (Size = 228), @p2='?' (DbType = DateTime), @p3='?' (Size = 67), @p4='?' (Size = 28), @p5='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "BlogPosts" ("AuthorName", "Content", "CreatedAt", "Summary", "Title", "UpdatedAt")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5)
+      RETURNING "Id";
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://localhost:5160
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Production
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\Users\user\OneDrive\Desktop\CMS\src\Cms.Web
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT "b"."Id", "b"."AuthorName", "b"."Content", "b"."CreatedAt", "b"."Summary", "b"."Title", "b"."UpdatedAt"
+      FROM "BlogPosts" AS "b"
+      ORDER BY "b"."CreatedAt" DESC
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT "b"."Id", "b"."AuthorName", "b"."Content", "b"."CreatedAt", "b"."Summary", "b"."Title", "b"."UpdatedAt"
+      FROM "BlogPosts" AS "b"
+      ORDER BY "b"."CreatedAt" DESC
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT "b"."Id", "b"."AuthorName", "b"."Content", "b"."CreatedAt", "b"."Summary", "b"."Title", "b"."UpdatedAt"
+      FROM "BlogPosts" AS "b"
+      ORDER BY "b"."CreatedAt" DESC
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT "b"."Id", "b"."AuthorName", "b"."Content", "b"."CreatedAt", "b"."Summary", "b"."Title", "b"."UpdatedAt"
+      FROM "BlogPosts" AS "b"
+      ORDER BY "b"."CreatedAt" DESC
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT "b"."Id", "b"."AuthorName", "b"."Content", "b"."CreatedAt", "b"."Summary", "b"."Title", "b"."UpdatedAt"
+      FROM "BlogPosts" AS "b"
+      WHERE "b"."Id" = @__p_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT "b"."Id", "b"."AuthorName", "b"."Content", "b"."CreatedAt", "b"."Summary", "b"."Title", "b"."UpdatedAt"
+      FROM "BlogPosts" AS "b"
+      WHERE "b"."Id" = @__p_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT "b"."Id", "b"."AuthorName", "b"."Content", "b"."CreatedAt", "b"."Summary", "b"."Title", "b"."UpdatedAt"
+      FROM "BlogPosts" AS "b"
+      WHERE "b"."Id" = @__p_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 10), @p1='?' (Size = 59), @p2='?' (DbType = DateTime), @p3='?' (Size = 20), @p4='?' (Size = 20), @p5='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "BlogPosts" ("AuthorName", "Content", "CreatedAt", "Summary", "Title", "UpdatedAt")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5)
+      RETURNING "Id";
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT "b"."Id", "b"."AuthorName", "b"."Content", "b"."CreatedAt", "b"."Summary", "b"."Title", "b"."UpdatedAt"
+      FROM "BlogPosts" AS "b"
+      WHERE "b"."Id" = @__p_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p6='?' (DbType = Int32), @p0='?' (Size = 10), @p1='?' (Size = 44), @p2='?' (DbType = DateTime), @p3='?' (Size = 15), @p4='?' (Size = 30), @p5='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+      UPDATE "BlogPosts" SET "AuthorName" = @p0, "Content" = @p1, "CreatedAt" = @p2, "Summary" = @p3, "Title" = @p4, "UpdatedAt" = @p5
+      WHERE "Id" = @p6
+      RETURNING 1;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT "b"."Id", "b"."AuthorName", "b"."Content", "b"."CreatedAt", "b"."Summary", "b"."Title", "b"."UpdatedAt"
+      FROM "BlogPosts" AS "b"
+      WHERE "b"."Id" = @__p_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      DELETE FROM "BlogPosts"
+      WHERE "Id" = @p0
+      RETURNING 1;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT "b"."Id", "b"."AuthorName", "b"."Content", "b"."CreatedAt", "b"."Summary", "b"."Title", "b"."UpdatedAt"
+      FROM "BlogPosts" AS "b"
+      WHERE "b"."Id" = @__p_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 9), @p1='?' (Size = 66), @p2='?' (DbType = DateTime), @p3='?' (Size = 28), @p4='?' (Size = 14), @p5='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "BlogPosts" ("AuthorName", "Content", "CreatedAt", "Summary", "Title", "UpdatedAt")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5)
+      RETURNING "Id";
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT "b"."Id", "b"."AuthorName", "b"."Content", "b"."CreatedAt", "b"."Summary", "b"."Title", "b"."UpdatedAt"
+      FROM "BlogPosts" AS "b"
+      ORDER BY "b"."CreatedAt" DESC
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT "b"."Id", "b"."AuthorName", "b"."Content", "b"."CreatedAt", "b"."Summary", "b"."Title", "b"."UpdatedAt"
+      FROM "BlogPosts" AS "b"
+      WHERE "b"."Id" = @__p_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      DELETE FROM "BlogPosts"
+      WHERE "Id" = @p0
+      RETURNING 1;

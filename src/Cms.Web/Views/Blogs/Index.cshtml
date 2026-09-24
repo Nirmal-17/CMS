@@ -1,0 +1,39 @@
+@model IReadOnlyList<Cms.Application.Models.BlogPostDto>
+@{
+    ViewData["Title"] = "Articles";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h1>Articles</h1>
+    <a class="btn btn-primary" asp-action="Create">Write a post</a>
+</div>
+
+@if (!Model.Any())
+{
+    <div class="alert alert-info">No articles yet. Be the first to write one!</div>
+}
+else
+{
+    <div class="row g-4">
+        @foreach (var post in Model)
+        {
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h2 class="card-title h5">
+                            <a asp-action="Details" asp-route-id="@post.Id" class="text-decoration-none">@post.Title</a>
+                        </h2>
+                        @if (!string.IsNullOrWhiteSpace(post.Summary))
+                        {
+                            <p class="card-text text-muted">@post.Summary</p>
+                        }
+                    </div>
+                    <div class="card-footer bg-white d-flex justify-content-between text-muted small">
+                        <span>@post.AuthorName</span>
+                        <span>@DateTime.SpecifyKind(post.CreatedAt, DateTimeKind.Utc).ToLocalTime().ToString("MMM d, yyyy")</span>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}

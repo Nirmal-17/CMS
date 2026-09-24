@@ -1,0 +1,12 @@
+C:\Users\user\OneDrive\Desktop\CMS\src\Cms.Domain\bin\Debug\net8.0\Cms.Domain.deps.json
+C:\Users\user\OneDrive\Desktop\CMS\src\Cms.Domain\bin\Debug\net8.0\Cms.Domain.dll
+C:\Users\user\OneDrive\Desktop\CMS\src\Cms.Domain\bin\Debug\net8.0\Cms.Domain.pdb
+C:\Users\user\OneDrive\Desktop\CMS\src\Cms.Domain\obj\Debug\net8.0\Cms.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\OneDrive\Desktop\CMS\src\Cms.Domain\obj\Debug\net8.0\Cms.Domain.AssemblyInfoInputs.cache
+C:\Users\user\OneDrive\Desktop\CMS\src\Cms.Domain\obj\Debug\net8.0\Cms.Domain.AssemblyInfo.cs
+C:\Users\user\OneDrive\Desktop\CMS\src\Cms.Domain\obj\Debug\net8.0\Cms.Domain.csproj.CoreCompileInputs.cache
+C:\Users\user\OneDrive\Desktop\CMS\src\Cms.Domain\obj\Debug\net8.0\Cms.Domain.sourcelink.json
+C:\Users\user\OneDrive\Desktop\CMS\src\Cms.Domain\obj\Debug\net8.0\Cms.Domain.dll
+C:\Users\user\OneDrive\Desktop\CMS\src\Cms.Domain\obj\Debug\net8.0\refint\Cms.Domain.dll
+C:\Users\user\OneDrive\Desktop\CMS\src\Cms.Domain\obj\Debug\net8.0\Cms.Domain.pdb
+C:\Users\user\OneDrive\Desktop\CMS\src\Cms.Domain\obj\Debug\net8.0\ref\Cms.Domain.dll

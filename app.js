@@ -3,22 +3,30 @@ const Blog=require("./model/blogModel");
 const express = require("express");
 const app = express();
 
+
+app.set('view engine','ejs')
+//nodejs lai form bata arko data parse gar vaneko ho
 app.use(express.json());
-app.use(express.urlencoded({extended:true}));
+app.use(express.urlencoded({extended:true}))
+
 //DATABASE CONNECTION
 connectDatabase()
 
 
 //GET API
 app.get('/',(req,res)=>{
-    res.send("You are in the home page")})
+    res.render('home.ejs')})
+    
+    
     app.get('/about',(req,res)=>{
         res.json({
             message:"about page",
             status:8888
         })
     })
+    //GET API -> /blogs (all blogs)
     app.get('/blogs',async(req,res)=>{
+        //fetch all blogs from blog model
         const blogs=await Blog.find();
 //check if blogs contains data or not
 if(blogs.length==0){
